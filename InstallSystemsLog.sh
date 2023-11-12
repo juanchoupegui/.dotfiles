@@ -3,3 +3,6 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/too
 git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
 git config --global user.email 'jotapeacheupe@hotmail.com'
 git config --global user.name 'juanchoupegui'
+cp ~/.zshrc ~/.zshrc.backup
+rm ~/.zshrc
+ln -sf ~/.dotfiles/.zshrc ~/.zshrc
