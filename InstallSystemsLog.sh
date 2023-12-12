@@ -7,3 +7,6 @@ cp ~/.zshrc ~/.zshrc.backup
 rm ~/.zshrc
 ln -sf ~/.dotfiles/.zshrc ~/.zshrc
 git clone --depth=1 https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
+sudo apt-get update -y
+sudo apt install xdg-utils
+
